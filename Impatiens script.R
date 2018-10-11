@@ -3,6 +3,10 @@
 rm(list=ls())
 search()
 
-Impatiens <- read.table("/Users/raggen93/Documents/Google Drive/Skole/BI3081 Quantitative analyses/Semesteroppgave/data_impatiens.txt", header=T)
+impa <- read.table("data_impatiens.txt", header=T)
+attach(impa)
 
-head(Impatiens)
+head(impa)
+
+names(impa)
+levels(generation)
